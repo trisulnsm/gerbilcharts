@@ -1,0 +1,350 @@
+h1. gerbilcharts
+A SVG + Javascript interactive Ruby charting library. 
+
+h2. Whats new Support for SVGWEB via embedding styles
+SVGWEB (http://code.google.com/p/svgweb/) is a new project that brings
+SVG to Internet Explorer. SVGWEB has a tiny limitation of not allowing 
+external stylesheets which is bad news for gerbilcharts because of the
+heavy use of css here.
+
+We now add a new option that automatically applies stylesheet styles to
+individual SVG elements. To use it, use the embed:stylesheet_name option 
+
+<pre syntax="ruby">
+mychart = GerbilCharts::Charts::LineChart.new( :width => 350,
+      :height => 200,
+	  :style => 'embed:brushmetal.css')
+
+</pre>
+
+
+h2. Whats new Lighting filters, tooltips and more interaction
+<table>
+<tr>
+<td>
+<embed SRC="./pie_monthly_sales.svg" WIDTH=350 HEIGHT=200 />
+</td>
+<td>
+<embed SRC="./pie_monthly_sales_lit.svg" WIDTH=350 HEIGHT=200 />
+</td>
+</tr>
+<tr>
+<td>
+Plain pie chart 
+</td>
+<td>
+Pie chart with filters & tooltips. Just add the parameter :filter => 'LikeButton' to obtain the above effect
+</td>
+</tr>
+</table>
+
+
+h2. Installing
+<pre syntax="ruby">sudo gem install gerbilcharts</pre>
+
+h2. Features
+
+* Models to help manipulate timeseries data
+* Many chart types (line, area, bar, stacked area, impulse) - more coming !
+* Customize via stylesheets instead of calls to setFont, setLineStyle, setColor etc
+* Interactive : Tooltips, handle clicks on chart objects
+* Ajax updates : gerbil.js allows each chart to autoupdate itself with new SVG elements.
+
+Known issues :
+* Requires a browser that can handle SVG such as Firefox/Opera.
+* IE + Adobe SVG Viewer works but has some problems w/ Ajax
+* Still needs some work on negative numbers
+* Needs better min/max/avg plotting on bucketized data
+
+<b>Note on stylesheets</b>
+GerbilCharts uses stylesheets to customize appearances of almost all visual
+elements (colors, fonts, line strokes, fills). You can use the supplied
+stylesheet (eg, brushmetal.css) or derive your own from it. GerbilCharts
+searches for stylesheets in the working directory and the public directory of
+the gerbilcharts gem.
+
+h2. Demonstration of usage
+
+The usage pattern of GerbilCharts is the familiar model + view pattern.
+
+The chart data is represented by a "Model Group"
+Each "Model Group" has several models representing the data items
+
+You have to create a Model Group, add Models to it, and attach it to a Chart view.
+
+See examples below for more.
+
+
+h3. Simple timeseries example
+
+This example outputs the chart to a SVG file.  You can view the file using FireFox or other SVG viewers.
+
+<pre syntax="ruby">
+require 'rubygems'
+gem 'gerbilcharts'
+require 'gerbilcharts'
+
+# test  sales figures of 3 sales people
+# use a simple timeseries model 
+mychart = GerbilCharts::Charts::LineChart.new( :width => 350, 
+      :height => 200, 
+      :style => 'brushmetal.css',
+      :circle_data_points => true )
+
+modelgroup = GerbilCharts::Models::SimpleTimeSeriesModelGroup.new(
+       :title => "Sales figures",
+       :timeseries  =>  (1..6).collect { |month| Time.local(2008,month) },
+       :models =>       [ ["Bruce", 1,  10, 18, 28, 80,  122],
+                          ["Rex"  , 112,22, 45, 70, 218, 309],
+                           ["Buzo" , 0,  23, 25, 40, 18,  59]
+                        ]
+     )
+mychart.modelgroup=modelgroup
+mychart.render('/tmp/monthly_sales.svg')
+</pre>
+
+h4. Output : Line chart
+<embed SRC="./n_monthly_sales.svg" WIDTH=350 HEIGHT=200 />
+
+h4. Output : Line chart with tooltips
+
+How to add tooltips : 
+Just change the chart creation code to include the :auto_tooltips => true parameter.
+<pre syntax="ruby">
+# To add a tooltip, set the :auto_tooltips parameter to true
+mychart = GerbilCharts::Charts::LineChart.new( :width => 350, 
+      :height => 200, 
+      :style => 'brushmetal.css',
+      :circle_data_points => true ,
+    :auto_tooltips => true )
+</pre>
+<embed SRC="./n_monthly_sales_with_tooltip.svg" WIDTH=350 HEIGHT=200 />
+
+h3. Using gerbilcharts with Rails
+
+This sample shows how you can use gerbilcharts in a rails app.
+
+Use the following sample to quickly start using gerbilcharts on a Rails app.You can skip the first three steps if you already have a rails app up and running.
+
+First install gerbilcharts
+<pre syntax="ruby">
+sudo gem install gerbilcharts
+</pre>
+
+Generate a test app called gtest
+<pre syntax="ruby">
+rails generate gtest
+</pre>
+
+Create a controller
+<pre syntax="ruby">
+cd gtest
+ruby script/generate controller tgerbil
+</pre>
+
+Copy the following code into app/controllers/tgerbil_controller.rb
+
+<pre syntax="ruby">
+
+require 'gerbilcharts'
+
+class GerbtController < ApplicationController
+
+ # render inline to browser without using a temp file
+  def tgerb
+
+      # test  sales figures of 3 sales people
+      # use a simple timeseries model 
+      # output to string finally
+      mychart = GerbilCharts::Charts::LineChart.new( :width => 350, 
+	                         :height => 200, :style => 'brushmetal.css',
+                             :circle_data_points => true )
+
+      mychart.modelgroup = GerbilCharts::Models::SimpleTimeSeriesModelGroup.new( 
+               :title => "Sales figures",
+               :timeseries  =>  (1..6).collect { |month| Time.local(2008,month) },
+               :models =>       [ ["Bruce", 1,  10, 18, 28, 80,  122],
+                        ["Rex"  , 112,22, 45, 70, 218, 309], 
+                        ["Buzo" , 0,  23, 25, 40, 18,  59] 
+                      ]
+             )
+
+	  # send directly to browser for inline rendering
+      send_data mychart.render_string, :disposition => 'inline', :type => 'image/svg+xml'
+  end   
+end
+</pre>
+
+
+Start the web server
+<pre syntax="ruby">
+  ruby script/server
+</pre>
+
+
+Point to website and test out the chart at http://localhost:3000/tgerbil/tgerb
+
+
+h3. Time series bucketizer example
+
+<pre syntax="ruby">
+require 'rubygems'
+gem 'gerbilcharts'
+require 'gerbilcharts'
+
+# Helper class to generate time series data for test purposes
+# Just makes it easier to generate thousands of data points 
+class TimeSeriesDataGenerator
+  
+  attr_reader  :tuples_array
+  
+    # allows you to generate controlled random data
+  # tm_from, tm_to = start,end  time (a Time object)
+  # avg_resolution_secs = generate a sample approx this many seconds. Varies randomly +/-25%
+  # max,min = max and min value
+  def initialize(tm_from, tm_to, avg_resolution_secs, min_val, max_val)
+    @tuples_array=[]
+    tm_tmp = tm_from
+    
+    while tm_tmp < tm_to
+      @tuples_array << [ tm_tmp, min_val + (max_val - min_val)*rand ]
+      tm_tmp = tm_tmp + avg_resolution_secs *( 1 + (rand-0.5)/4)
+    end
+  end
+
+  # iterator
+  def each_tuple
+    @tuples_array.each do |t,v|
+      yield t,v
+    end
+  end
+end
+
+
+# create an impulse chart 450x200 using the supplied brushmetal theme
+mychart = GerbilCharts::Charts::ImpulseChart.new( 
+            :width => 450, :height => 200, :style => 'brushmetal.css')
+
+# stats of item "eth0"
+# generate traffic sample 1 (eth0) at approx 5 min intervals 
+# and feed into a bucketizer model of 15 min
+tend = Time.now
+tbegin = tend - 3600*24
+model1 = GerbilCharts::Models::BucketizedTimeSeriesGraphModel.new("eth0",900)
+TimeSeriesDataGenerator.new(tbegin,tend,300,200000, 6000000).each_tuple do |t,v|
+    model1.add(t,v)
+end
+  
+# stats of item "wan1"
+# generate traffic sample 2(wan1) at approx 5 min intervals 
+# then feed into a bucketizer model of 15 min
+model2 = GerbilCharts::Models::BucketizedTimeSeriesGraphModel.new( "wan1", 900 )
+TimeSeriesDataGenerator.new(tbegin,tend,300,500000, 2000000).each_tuple do |t,v|
+    model2.add(t,v)
+end
+
+# add these models to a modelgroup and render it
+modelgroup = GerbilCharts::Models::GraphModelGroup.new( "External Traffic")
+modelgroup.add model1
+modelgroup.add model2
+mychart.modelgroup=modelgroup
+mychart.render('/tmp/daily_traffic.svg')
+
+# attach the same model to a stacked area chart and show it 
+# this demonstrates how the views can be changed dynamically
+mysachart = GerbilCharts::Charts::StackedAreaChart.new( 
+               :width => 450, :height => 200, :style => 'brushmetal.css')
+mysachart.modelgroup=modelgroup
+mysachart.render('/tmp/daily_traffic_stacked_area.svg')  
+
+</pre>
+
+h4. Chart 1 : Impulse chart
+<embed SRC="./daily_traffic.svg" WIDTH=450 HEIGHT=200 TYPE="image/svg+xml" />
+
+h4. Chart 2 : Stacked area chart
+<embed SRC="./daily_traffic_stacked_area.svg" WIDTH=450 HEIGHT=200 TYPE="image/svg+xml" />
+
+h4. Chart 3 : Area chart w/ transparency
+The solid bars show the latest values.
+<embed SRC="./daily_traffic_area.svg" WIDTH=450 HEIGHT=200 TYPE="image/svg+xml" />
+
+
+h3. Bucketizer rails example
+
+Paste this code into a rails controller to test the bucketizer in a rails environment. 
+
+<pre syntax="ruby">
+require 'gerbilcharts'
+
+class GerbtController < ApplicationController
+
+  # use the bucketized model only if we want the output to have a lower resolution 
+  # than the incoming data
+  def tbucket
+
+   # create a model group, this houses the individual models
+   modelgroup  = GerbilCharts::Models::GraphModelGroup.new("Price trends")
+
+   # bucketized models, we create one and add it to the group
+   bucket1  = GerbilCharts::Models::BucketizedTimeSeriesGraphModel.new("Selling Price",60)
+   tbeg = Time.local( 1978, "jun", 5, 9, 10, 0, 0)
+   
+   # generate some random values at random resolution 
+   # between 5 and 30 seconds
+   100.times do |c|
+     tbeg  =  tbeg + 5 + rand*30
+     bucket1.add tbeg, rand*1000
+   end
+
+   # add all models to the group , we will chart the group
+   modelgroup.add(bucket1)
+
+   # create a area chart
+   mychart = GerbilCharts::Charts::AreaChart.new( :width => 350, 
+                          :height => 200, 
+                          :style => 'brushmetal.css')
+
+   # connect the model group to the chart
+   mychart.setmodelgroup(modelgroup)
+
+   send_data mychart.render_string, 
+            :disposition => 'inline', :type => 'image/svg+xml'
+   end
+end
+</pre>
+
+h2. Forum
+
+http://gerbilcharts.rubyforge.org
+
+h2. How to submit patches
+
+Read the "8 steps for fixing other people's code":http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/ and for section "8b: Submit patch to Google Groups":http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/#8b-google-groups, use the Google Group above.
+
+The trunk repository is <code>svn://rubyforge.org/var/svn/gerbilcharts/trunk</code> for anonymous access.
+
+
+<pre>git clone git://rubyforge.org/gerbilcharts.git</pre>
+
+h3. Build and test instructions
+
+<pre>cd gerbilcharts
+rake test
+rake install_gem</pre>
+
+
+h2. License
+
+This code is free to use under the terms of the MIT license. 
+
+h2. Contact
+
+Comments are welcome. 
+
+GerbilCharts is the charting package used for the Web Trisul Network Metering and Forensics project. See http://www.unleashnetworks.com/trisul
+
+Send an email to "Vivek Rajagopalan of Trisul Metering": email trisul@googlegroups.com
+
+
+

@@ -1,0 +1,284 @@
+.surfacepanel
+{
+    fill: none;
+    stroke-width: 1;
+    stroke: black;
+}
+.gridlineh
+{
+    stroke-width: 0.7;
+    stroke: #ccc;
+}
+.gridlinev
+{
+    stroke-width: 0.7;
+    stroke: #ccc;
+}
+.gridlinesub
+{
+    stroke-width: 0.5;
+    stroke: #eee;
+}
+.surfaceback
+{
+    fill: white;
+    stroke: none;
+}
+.axispanel
+{
+    fill: #EEEEEE;
+    stroke: none;
+}
+.axistickmajor
+{
+    stroke-width: 2;
+    stroke: black;
+}
+.axistickminor
+{
+    stroke-width: 1;
+    stroke: black;
+}
+.panel
+{
+    fill: white;
+}
+
+.legend
+{
+    fill: red;
+}
+.x_mk
+{
+    fill: yellow;
+    fill-opacity: 0.10;
+    stroke: gray;
+}
+#ref_mod
+{
+    fill: gray;
+    fill-opacity: 0.20;
+	stroke: none;
+}
+#item0
+{
+        stroke: none;
+        fill: #2166AC;
+}
+#item1
+{
+        stroke: none;
+        fill: #4393C3;
+}
+#item2
+{
+        stroke: none;
+        fill: #92C5DE;
+}
+#item3
+{
+        stroke: none;
+        fill:#D1E5F0;
+}
+#item4
+{
+        stroke: none;
+        fill:#D6604D; /*FDDBC7*/
+}
+#item5
+{
+        stroke: none;
+        fill:#FDDBC7;
+}
+#item6
+{
+        stroke: none;
+        fill: #2166AC;
+}
+#item7
+{
+        stroke: none;
+        fill: #4393C3;
+}
+#item8
+{
+    stroke: none;
+    fill: #92C5DE;
+}
+#item9
+{
+    stroke: none;
+    fill: #92C5DE;
+}
+#item10
+{
+    stroke: none;
+    fill: #D1E5F0;
+}
+#lineitem0
+{
+    stroke: #2166AC;
+    stroke-width: 2;
+}
+#lineitem1
+{
+    stroke: #4393C3;
+    stroke-width: 2;
+}
+#lineitem2
+{
+    stroke:#92C5DE;
+    stroke-width: 2;
+}
+#lineitem3
+{
+    stroke:#D1E5F0;
+    stroke-width: 2;
+}
+#lineitem4
+{
+    stroke:#FDDBC7;
+    stroke-width: 2;
+}
+#lineitem5
+{
+    stroke: #F4A582;
+    stroke-width:2;
+}
+#lineitem6
+{
+    stroke: #D6604D;
+    stroke-width: 2;
+}
+#lineitem7
+{
+    stroke: none;
+    stroke-width: 2;
+}
+#lineitem8
+{
+    stroke: none;
+    stroke-width: 2;
+}
+.axislabel
+{
+    font-family: monospace;
+    font-size: 11px;
+    fill: black;
+    stroke: none;
+}
+
+.axislabelt0
+{
+    font-family: monospace;
+    font-size: 9px;
+    fill: black;
+    stroke: none;
+}
+.titletext
+{
+    fill: #999;
+    stroke:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+.titlepanel
+{
+    fill: none;
+    fill-opacity: 0.5;
+}
+.titletool
+{
+    fill: #AAA;
+    stroke:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+.legendpanel
+{
+    fill: white;
+    fill-opacity: 0.6;
+    stroke: #ddd;
+}
+
+.legendtext
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    fill: black;
+    stroke: none;
+}
+.legendstats
+{
+    font-family: monospace;
+    font-size: 10px;
+    fill: black;
+    stroke: none;
+}
+
+.elementlabel
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    fill: black;
+    stroke: none;
+}
+.elementlabel_large
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    fill: black;
+    stroke: none;
+}
+.elementlabel_huge
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    fill: black;
+    stroke: none;
+}
+.elementvalue
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    fill: black;
+    stroke: none;
+}
+.elementvalue_large
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    fill: black;
+    stroke: none;
+}
+.elementvalue_huge
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    fill: black;
+    stroke: none;
+}
+.trackerpanel
+{
+    fill: white;
+    fill-opacity: 0.0;
+}
+.trackerrect
+{
+    fill: red;
+    fill-opacity: 0.4;
+}
+.trackertextinterval
+{
+    font-family: courier;
+    font-size: 11px;
+    fill: black;
+    stroke: none;
+}
+.trackertextfromts
+{
+    font-family: courier;
+    font-size: 9px;
+    fill: black;
+    stroke: none;
+}

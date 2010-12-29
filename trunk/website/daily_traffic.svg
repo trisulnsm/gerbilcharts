@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" xmlns="http://www.w3.org/2000/svg" height="200" onload="Init(evt)">
+  <style type="text/css">.surfacepanel
+{
+	fill: none;
+	stroke-width: 1;
+	stroke: black;
+}
+.gridlineh
+{	
+	stroke-width: 1;
+	stroke: lightgray;
+}
+.gridlinev
+{
+	stroke-width: 1;
+	stroke: lightgray;	
+}
+.surfaceback
+{
+	fill: url(#vertgrad);
+}
+.axispanel
+{
+	fill: lightgray;
+}
+.axistickmajor
+{
+	stroke-width: 2;
+	stroke: black;
+}
+.axistickminor
+{
+	stroke-width: 1;
+	stroke: black;
+}
+.panel
+{
+	fill: white;
+}
+.legend
+{
+	fill: red;
+}
+#item0
+{
+	stroke:	blue;
+	fill: blue;
+}
+#item1
+{
+	stroke: red;
+	fill: red;
+}
+#item2
+{
+	stroke: yellow;
+	fill: yellow ;
+}
+#item3
+{
+	stroke: aqua;
+	fill: magenta;
+}
+#item4
+{
+	stroke:	gray;
+	fill: blue;
+}
+#item5
+{
+	stroke: green;
+	fill: green;
+}
+#item6
+{
+	stroke: orange;
+	fill: orange;
+}
+#item7
+{
+	stroke: lime;
+	fill: violet;
+}
+#item8
+{
+    stroke: brown;
+    fill: navy;
+}
+#lineitem0
+{
+    stroke: blue;
+    stroke-width: 2;
+}
+#lineitem1
+{
+    stroke: red;
+    stroke-width: 2;
+}
+#lineitem2
+{
+    stroke: yellow;
+    stroke-width: 2;
+}
+#lineitem3
+{
+    stroke: aqua;
+    stroke-width: 2;
+}
+#lineitem4
+{
+    stroke: gray;
+    stroke-width: 2;
+}
+#lineitem5
+{
+    stroke: green;
+    stroke-width: 2;
+}
+#lineitem6
+{
+    stroke: orange;
+    stroke-width: 2;
+}
+#lineitem7
+{
+    stroke: lime;
+    stroke-width: 2;
+}
+#lineitem8
+{
+    stroke: brown;
+    stroke-width: 2;
+}
+.axislabel
+{
+	font-family: sans;
+	font-size: 10px;
+	fill: black;
+	stroke: none;
+}
+
+.axislabelt0
+{
+	font-family: sans;
+	font-size: 8px;
+	fill: black;
+	stroke: none;
+}
+.titletext
+{
+	fill: gray;
+	stroke: none;
+	font-family: Arial, Helvetica, sans-serif;;
+	font-size: 24px;
+	font-weight: bold;
+}
+.titlepanel
+{
+	fill: white;
+	fill-opacity: 0.5;
+}
+.legendpanel
+{
+	fill: white;
+	fill-opacity: 0.5;
+}
+.legendtext
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	fill: black;
+	stroke: none;
+}
+.elementlabel
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.trackerpanel
+{
+    fill: yellow;
+    fill-opacity: 0.5;
+}
+.trackerrect
+{
+    fill: red;
+    fill-opacity: 0.2;
+}
+.trackertextinterval
+{
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.trackertextfromts
+{
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+</style>
+  <script xlink:href="/javascripts/prototype.js" type="text/javascript"/>
+  <script xlink:href="/javascripts/gerbil.js" type="text/javascript"/>
+  <defs>
+  </defs>
+  <g id="GerbilSVGGraph">
+    <g id="Gerbil_Root_Window" stroke="black" fill="none">
+      <g id="default" stroke="black" fill="none">
+        <rect y="0" class="surfaceback" width="410" height="175" x="40"/>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <line class="gridlineh" y2="175.00" x1="40.00" y1="175.00" x2="450.00"/>
+        <line class="gridlineh" y2="131.25" x1="40.00" y1="131.25" x2="450.00"/>
+        <line class="gridlineh" y2="87.50" x1="40.00" y1="87.50" x2="450.00"/>
+        <line class="gridlineh" y2="43.75" x1="40.00" y1="43.75" x2="450.00"/>
+        <line class="gridlineh" y2="0.00" x1="40.00" y1="0.00" x2="450.00"/>
+        <line class="gridlinev" y2="175.00" x1="62.78" y1="0.00" x2="62.78"/>
+        <line class="gridlinev" y2="175.00" x1="117.44" y1="0.00" x2="117.44"/>
+        <line class="gridlinev" y2="175.00" x1="172.11" y1="0.00" x2="172.11"/>
+        <line class="gridlinev" y2="175.00" x1="226.78" y1="0.00" x2="226.78"/>
+        <line class="gridlinev" y2="175.00" x1="281.44" y1="0.00" x2="281.44"/>
+        <line class="gridlinev" y2="175.00" x1="336.11" y1="0.00" x2="336.11"/>
+        <line class="gridlinev" y2="175.00" x1="390.78" y1="0.00" x2="390.78"/>
+        <line class="gridlinev" y2="175.00" x1="445.44" y1="0.00" x2="445.44"/>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <text y="20" class="titletext" x="42">External Traffic</text>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <g id="impulse" stroke="black" stroke-width="2.27777777751908" fill="none">
+          <line y2="88.57" x1="40.00" id="item0" y1="175.00" x2="40.00"/>
+          <line y2="64.96" x1="42.28" id="item0" y1="175.00" x2="42.28"/>
+          <line y2="50.62" x1="44.56" id="item0" y1="175.00" x2="44.56"/>
+          <line y2="50.41" x1="46.83" id="item0" y1="175.00" x2="46.83"/>
+          <line y2="13.37" x1="49.11" id="item0" y1="175.00" x2="49.11"/>
+          <line y2="106.37" x1="51.39" id="item0" y1="175.00" x2="51.39"/>
+          <line y2="76.76" x1="53.67" id="item0" y1="175.00" x2="53.67"/>
+          <line y2="78.65" x1="55.94" id="item0" y1="175.00" x2="55.94"/>
+          <line y2="77.82" x1="58.22" id="item0" y1="175.00" x2="58.22"/>
+          <line y2="72.44" x1="60.50" id="item0" y1="175.00" x2="60.50"/>
+          <line y2="99.75" x1="62.78" id="item0" y1="175.00" x2="62.78"/>
+          <line y2="102.02" x1="65.06" id="item0" y1="175.00" x2="65.06"/>
+          <line y2="67.10" x1="67.33" id="item0" y1="175.00" x2="67.33"/>
+          <line y2="32.10" x1="69.61" id="item0" y1="175.00" x2="69.61"/>
+          <line y2="49.37" x1="71.89" id="item0" y1="175.00" x2="71.89"/>
+          <line y2="128.21" x1="74.17" id="item0" y1="175.00" x2="74.17"/>
+          <line y2="82.31" x1="76.44" id="item0" y1="175.00" x2="76.44"/>
+          <line y2="101.13" x1="78.72" id="item0" y1="175.00" x2="78.72"/>
+          <line y2="91.34" x1="81.00" id="item0" y1="175.00" x2="81.00"/>
+          <line y2="88.18" x1="83.28" id="item0" y1="175.00" x2="83.28"/>
+          <line y2="59.09" x1="85.56" id="item0" y1="175.00" x2="85.56"/>
+          <line y2="73.44" x1="87.83" id="item0" y1="175.00" x2="87.83"/>
+          <line y2="137.06" x1="90.11" id="item0" y1="175.00" x2="90.11"/>
+          <line y2="57.76" x1="92.39" id="item0" y1="175.00" x2="92.39"/>
+          <line y2="108.94" x1="94.67" id="item0" y1="175.00" x2="94.67"/>
+          <line y2="90.30" x1="96.94" id="item0" y1="175.00" x2="96.94"/>
+          <line y2="79.28" x1="99.22" id="item0" y1="175.00" x2="99.22"/>
+          <line y2="97.66" x1="101.50" id="item0" y1="175.00" x2="101.50"/>
+          <line y2="117.87" x1="103.78" id="item0" y1="175.00" x2="103.78"/>
+          <line y2="31.74" x1="106.06" id="item0" y1="175.00" x2="106.06"/>
+          <line y2="91.23" x1="108.33" id="item0" y1="175.00" x2="108.33"/>
+          <line y2="116.55" x1="110.61" id="item0" y1="175.00" x2="110.61"/>
+          <line y2="107.83" x1="112.89" id="item0" y1="175.00" x2="112.89"/>
+          <line y2="115.28" x1="115.17" id="item0" y1="175.00" x2="115.17"/>
+          <line y2="67.18" x1="117.44" id="item0" y1="175.00" x2="117.44"/>
+          <line y2="67.22" x1="119.72" id="item0" y1="175.00" x2="119.72"/>
+          <line y2="44.77" x1="122.00" id="item0" y1="175.00" x2="122.00"/>
+          <line y2="76.24" x1="124.28" id="item0" y1="175.00" x2="124.28"/>
+          <line y2="93.56" x1="126.56" id="item0" y1="175.00" x2="126.56"/>
+          <line y2="64.65" x1="128.83" id="item0" y1="175.00" x2="128.83"/>
+          <line y2="42.91" x1="131.11" id="item0" y1="175.00" x2="131.11"/>
+          <line y2="96.05" x1="133.39" id="item0" y1="175.00" x2="133.39"/>
+          <line y2="83.80" x1="135.67" id="item0" y1="175.00" x2="135.67"/>
+          <line y2="47.30" x1="137.94" id="item0" y1="175.00" x2="137.94"/>
+          <line y2="100.02" x1="140.22" id="item0" y1="175.00" x2="140.22"/>
+          <line y2="101.91" x1="142.50" id="item0" y1="175.00" x2="142.50"/>
+          <line y2="113.94" x1="144.78" id="item0" y1="175.00" x2="144.78"/>
+          <line y2="40.13" x1="147.06" id="item0" y1="175.00" x2="147.06"/>
+          <line y2="112.28" x1="149.33" id="item0" y1="175.00" x2="149.33"/>
+          <line y2="73.30" x1="151.61" id="item0" y1="175.00" x2="151.61"/>
+          <line y2="94.52" x1="153.89" id="item0" y1="175.00" x2="153.89"/>
+          <line y2="90.13" x1="156.17" id="item0" y1="175.00" x2="156.17"/>
+          <line y2="45.13" x1="158.44" id="item0" y1="175.00" x2="158.44"/>
+          <line y2="68.20" x1="160.72" id="item0" y1="175.00" x2="160.72"/>
+          <line y2="37.83" x1="163.00" id="item0" y1="175.00" x2="163.00"/>
+          <line y2="44.48" x1="165.28" id="item0" y1="175.00" x2="165.28"/>
+          <line y2="97.59" x1="167.56" id="item0" y1="175.00" x2="167.56"/>
+          <line y2="50.07" x1="169.83" id="item0" y1="175.00" x2="169.83"/>
+          <line y2="119.62" x1="172.11" id="item0" y1="175.00" x2="172.11"/>
+          <line y2="68.35" x1="174.39" id="item0" y1="175.00" x2="174.39"/>
+          <line y2="51.76" x1="176.67" id="item0" y1="175.00" x2="176.67"/>
+          <line y2="68.93" x1="178.94" id="item0" y1="175.00" x2="178.94"/>
+          <line y2="87.88" x1="181.22" id="item0" y1="175.00" x2="181.22"/>
+          <line y2="45.81" x1="183.50" id="item0" y1="175.00" x2="183.50"/>
+          <line y2="36.80" x1="185.78" id="item0" y1="175.00" x2="185.78"/>
+          <line y2="114.64" x1="188.06" id="item0" y1="175.00" x2="188.06"/>
+          <line y2="71.26" x1="190.33" id="item0" y1="175.00" x2="190.33"/>
+          <line y2="103.69" x1="192.61" id="item0" y1="175.00" x2="192.61"/>
+          <line y2="75.76" x1="194.89" id="item0" y1="175.00" x2="194.89"/>
+          <line y2="110.44" x1="197.17" id="item0" y1="175.00" x2="197.17"/>
+          <line y2="87.23" x1="199.44" id="item0" y1="175.00" x2="199.44"/>
+          <line y2="102.18" x1="201.72" id="item0" y1="175.00" x2="201.72"/>
+          <line y2="109.64" x1="204.00" id="item0" y1="175.00" x2="204.00"/>
+          <line y2="31.80" x1="206.28" id="item0" y1="175.00" x2="206.28"/>
+          <line y2="72.09" x1="208.56" id="item0" y1="175.00" x2="208.56"/>
+          <line y2="132.49" x1="210.83" id="item0" y1="175.00" x2="210.83"/>
+          <line y2="96.66" x1="213.11" id="item0" y1="175.00" x2="213.11"/>
+          <line y2="96.21" x1="215.39" id="item0" y1="175.00" x2="215.39"/>
+          <line y2="65.27" x1="217.67" id="item0" y1="175.00" x2="217.67"/>
+          <line y2="126.23" x1="219.94" id="item0" y1="175.00" x2="219.94"/>
+          <line y2="56.07" x1="222.22" id="item0" y1="175.00" x2="222.22"/>
+          <line y2="81.10" x1="224.50" id="item0" y1="175.00" x2="224.50"/>
+          <line y2="44.21" x1="226.78" id="item0" y1="175.00" x2="226.78"/>
+          <line y2="100.93" x1="229.06" id="item0" y1="175.00" x2="229.06"/>
+          <line y2="153.97" x1="231.33" id="item0" y1="175.00" x2="231.33"/>
+          <line y2="35.94" x1="233.61" id="item0" y1="175.00" x2="233.61"/>
+          <line y2="97.72" x1="235.89" id="item0" y1="175.00" x2="235.89"/>
+          <line y2="115.92" x1="238.17" id="item0" y1="175.00" x2="238.17"/>
+          <line y2="95.97" x1="240.44" id="item0" y1="175.00" x2="240.44"/>
+          <line y2="79.14" x1="242.72" id="item0" y1="175.00" x2="242.72"/>
+          <line y2="153.17" x1="245.00" id="item0" y1="175.00" x2="245.00"/>
+          <line y2="85.89" x1="247.28" id="item0" y1="175.00" x2="247.28"/>
+          <line y2="138.60" x1="249.56" id="item0" y1="175.00" x2="249.56"/>
+          <line y2="64.65" x1="251.83" id="item0" y1="175.00" x2="251.83"/>
+          <line y2="93.06" x1="254.11" id="item0" y1="175.00" x2="254.11"/>
+          <line y2="95.38" x1="256.39" id="item0" y1="175.00" x2="256.39"/>
+          <line y2="133.15" x1="258.67" id="item0" y1="175.00" x2="258.67"/>
+          <line y2="117.37" x1="40.00" id="item1" y1="175.00" x2="40.00"/>
+          <line y2="96.12" x1="42.28" id="item1" y1="175.00" x2="42.28"/>
+          <line y2="114.95" x1="44.56" id="item1" y1="175.00" x2="44.56"/>
+          <line y2="141.39" x1="46.83" id="item1" y1="175.00" x2="46.83"/>
+          <line y2="99.97" x1="49.11" id="item1" y1="175.00" x2="49.11"/>
+          <line y2="131.22" x1="51.39" id="item1" y1="175.00" x2="51.39"/>
+          <line y2="124.21" x1="53.67" id="item1" y1="175.00" x2="53.67"/>
+          <line y2="147.63" x1="55.94" id="item1" y1="175.00" x2="55.94"/>
+          <line y2="138.72" x1="58.22" id="item1" y1="175.00" x2="58.22"/>
+          <line y2="137.03" x1="60.50" id="item1" y1="175.00" x2="60.50"/>
+          <line y2="116.67" x1="62.78" id="item1" y1="175.00" x2="62.78"/>
+          <line y2="107.60" x1="65.06" id="item1" y1="175.00" x2="65.06"/>
+          <line y2="134.94" x1="67.33" id="item1" y1="175.00" x2="67.33"/>
+          <line y2="128.01" x1="69.61" id="item1" y1="175.00" x2="69.61"/>
+          <line y2="131.90" x1="71.89" id="item1" y1="175.00" x2="71.89"/>
+          <line y2="126.47" x1="74.17" id="item1" y1="175.00" x2="74.17"/>
+          <line y2="111.07" x1="76.44" id="item1" y1="175.00" x2="76.44"/>
+          <line y2="123.10" x1="78.72" id="item1" y1="175.00" x2="78.72"/>
+          <line y2="125.74" x1="81.00" id="item1" y1="175.00" x2="81.00"/>
+          <line y2="117.12" x1="83.28" id="item1" y1="175.00" x2="83.28"/>
+          <line y2="113.38" x1="85.56" id="item1" y1="175.00" x2="85.56"/>
+          <line y2="114.05" x1="87.83" id="item1" y1="175.00" x2="87.83"/>
+          <line y2="132.46" x1="90.11" id="item1" y1="175.00" x2="90.11"/>
+          <line y2="128.11" x1="92.39" id="item1" y1="175.00" x2="92.39"/>
+          <line y2="120.09" x1="94.67" id="item1" y1="175.00" x2="94.67"/>
+          <line y2="122.63" x1="96.94" id="item1" y1="175.00" x2="96.94"/>
+          <line y2="130.33" x1="99.22" id="item1" y1="175.00" x2="99.22"/>
+          <line y2="136.28" x1="101.50" id="item1" y1="175.00" x2="101.50"/>
+          <line y2="124.22" x1="103.78" id="item1" y1="175.00" x2="103.78"/>
+          <line y2="127.98" x1="106.06" id="item1" y1="175.00" x2="106.06"/>
+          <line y2="105.95" x1="108.33" id="item1" y1="175.00" x2="108.33"/>
+          <line y2="136.92" x1="110.61" id="item1" y1="175.00" x2="110.61"/>
+          <line y2="112.19" x1="112.89" id="item1" y1="175.00" x2="112.89"/>
+          <line y2="106.33" x1="115.17" id="item1" y1="175.00" x2="115.17"/>
+          <line y2="145.46" x1="117.44" id="item1" y1="175.00" x2="117.44"/>
+          <line y2="113.13" x1="119.72" id="item1" y1="175.00" x2="119.72"/>
+          <line y2="103.30" x1="122.00" id="item1" y1="175.00" x2="122.00"/>
+          <line y2="134.84" x1="124.28" id="item1" y1="175.00" x2="124.28"/>
+          <line y2="136.87" x1="126.56" id="item1" y1="175.00" x2="126.56"/>
+          <line y2="140.37" x1="128.83" id="item1" y1="175.00" x2="128.83"/>
+          <line y2="121.87" x1="131.11" id="item1" y1="175.00" x2="131.11"/>
+          <line y2="117.11" x1="133.39" id="item1" y1="175.00" x2="133.39"/>
+          <line y2="135.91" x1="135.67" id="item1" y1="175.00" x2="135.67"/>
+          <line y2="115.92" x1="137.94" id="item1" y1="175.00" x2="137.94"/>
+          <line y2="125.08" x1="140.22" id="item1" y1="175.00" x2="140.22"/>
+          <line y2="118.13" x1="142.50" id="item1" y1="175.00" x2="142.50"/>
+          <line y2="108.61" x1="144.78" id="item1" y1="175.00" x2="144.78"/>
+          <line y2="137.87" x1="147.06" id="item1" y1="175.00" x2="147.06"/>
+          <line y2="133.98" x1="149.33" id="item1" y1="175.00" x2="149.33"/>
+          <line y2="149.43" x1="151.61" id="item1" y1="175.00" x2="151.61"/>
+          <line y2="135.42" x1="153.89" id="item1" y1="175.00" x2="153.89"/>
+          <line y2="108.54" x1="156.17" id="item1" y1="175.00" x2="156.17"/>
+          <line y2="97.48" x1="158.44" id="item1" y1="175.00" x2="158.44"/>
+          <line y2="114.08" x1="160.72" id="item1" y1="175.00" x2="160.72"/>
+          <line y2="101.68" x1="163.00" id="item1" y1="175.00" x2="163.00"/>
+          <line y2="136.35" x1="165.28" id="item1" y1="175.00" x2="165.28"/>
+          <line y2="119.92" x1="167.56" id="item1" y1="175.00" x2="167.56"/>
+          <line y2="136.04" x1="169.83" id="item1" y1="175.00" x2="169.83"/>
+          <line y2="120.49" x1="172.11" id="item1" y1="175.00" x2="172.11"/>
+          <line y2="123.26" x1="174.39" id="item1" y1="175.00" x2="174.39"/>
+          <line y2="96.14" x1="176.67" id="item1" y1="175.00" x2="176.67"/>
+          <line y2="109.42" x1="178.94" id="item1" y1="175.00" x2="178.94"/>
+          <line y2="119.43" x1="181.22" id="item1" y1="175.00" x2="181.22"/>
+          <line y2="123.18" x1="183.50" id="item1" y1="175.00" x2="183.50"/>
+          <line y2="124.49" x1="185.78" id="item1" y1="175.00" x2="185.78"/>
+          <line y2="103.12" x1="188.06" id="item1" y1="175.00" x2="188.06"/>
+          <line y2="108.40" x1="190.33" id="item1" y1="175.00" x2="190.33"/>
+          <line y2="120.79" x1="192.61" id="item1" y1="175.00" x2="192.61"/>
+          <line y2="124.52" x1="194.89" id="item1" y1="175.00" x2="194.89"/>
+          <line y2="112.43" x1="197.17" id="item1" y1="175.00" x2="197.17"/>
+          <line y2="108.95" x1="199.44" id="item1" y1="175.00" x2="199.44"/>
+          <line y2="125.70" x1="201.72" id="item1" y1="175.00" x2="201.72"/>
+          <line y2="118.09" x1="204.00" id="item1" y1="175.00" x2="204.00"/>
+          <line y2="140.60" x1="206.28" id="item1" y1="175.00" x2="206.28"/>
+          <line y2="125.20" x1="208.56" id="item1" y1="175.00" x2="208.56"/>
+          <line y2="115.71" x1="210.83" id="item1" y1="175.00" x2="210.83"/>
+          <line y2="138.42" x1="213.11" id="item1" y1="175.00" x2="213.11"/>
+          <line y2="123.98" x1="215.39" id="item1" y1="175.00" x2="215.39"/>
+          <line y2="107.62" x1="217.67" id="item1" y1="175.00" x2="217.67"/>
+          <line y2="103.31" x1="219.94" id="item1" y1="175.00" x2="219.94"/>
+          <line y2="101.22" x1="222.22" id="item1" y1="175.00" x2="222.22"/>
+          <line y2="127.90" x1="224.50" id="item1" y1="175.00" x2="224.50"/>
+          <line y2="149.60" x1="226.78" id="item1" y1="175.00" x2="226.78"/>
+          <line y2="99.32" x1="229.06" id="item1" y1="175.00" x2="229.06"/>
+          <line y2="141.08" x1="231.33" id="item1" y1="175.00" x2="231.33"/>
+          <line y2="94.38" x1="233.61" id="item1" y1="175.00" x2="233.61"/>
+          <line y2="148.11" x1="235.89" id="item1" y1="175.00" x2="235.89"/>
+          <line y2="121.92" x1="238.17" id="item1" y1="175.00" x2="238.17"/>
+          <line y2="125.90" x1="240.44" id="item1" y1="175.00" x2="240.44"/>
+          <line y2="120.48" x1="242.72" id="item1" y1="175.00" x2="242.72"/>
+          <line y2="117.36" x1="245.00" id="item1" y1="175.00" x2="245.00"/>
+          <line y2="145.96" x1="247.28" id="item1" y1="175.00" x2="247.28"/>
+          <line y2="115.33" x1="249.56" id="item1" y1="175.00" x2="249.56"/>
+          <line y2="144.49" x1="251.83" id="item1" y1="175.00" x2="251.83"/>
+          <line y2="149.51" x1="254.11" id="item1" y1="175.00" x2="254.11"/>
+          <line y2="115.04" x1="256.39" id="item1" y1="175.00" x2="256.39"/>
+          <line y2="109.94" x1="258.67" id="item1" y1="175.00" x2="258.67"/>
+        </g>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <rect y="10" class="legendpanel" width="100" height="30" x="346"/>
+        <rect y="12" width="10" height="10" x="348" id="item0"/>
+        <text y="20" class="legendtext" x="363">eth0</text>
+        <rect y="27" width="10" height="10" x="348" id="item1"/>
+        <text y="35" class="legendtext" x="363">wan1</text>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <rect y="0" class="axispanel" width="40" height="175" x="0"/>
+        <text y="175.0" class="axislabel" text-anchor="end" x="36">0</text>
+        <line class="axistickmajor" y2="175.00" x1="37.00" y1="175.00" x2="42.00"/>
+        <text y="131.25" class="axislabel" text-anchor="end" x="36">1.50 M</text>
+        <line class="axistickmajor" y2="131.25" x1="37.00" y1="131.25" x2="42.00"/>
+        <text y="87.5" class="axislabel" text-anchor="end" x="36">3 M</text>
+        <line class="axistickmajor" y2="87.50" x1="37.00" y1="87.50" x2="42.00"/>
+        <text y="43.75" class="axislabel" text-anchor="end" x="36">4.50 M</text>
+        <line class="axistickmajor" y2="43.75" x1="37.00" y1="43.75" x2="42.00"/>
+        <text y="10" class="axislabel" text-anchor="end" x="36">6 M</text>
+        <line class="axistickmajor" y2="0.00" x1="37.00" y1="0.00" x2="42.00"/>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <rect y="175" class="axispanel" width="410" height="25" x="40"/>
+        <text y="185" class="axislabel" x="62.7777777777778">Sun-11:00</text>
+        <line class="axistickmajor" y2="178.00" x1="62.78" y1="173.00" x2="62.78"/>
+        <text y="185" class="axislabel" x="117.444444444444">Sun-17:00</text>
+        <line class="axistickmajor" y2="178.00" x1="117.44" y1="173.00" x2="117.44"/>
+        <text y="185" class="axislabel" x="172.111111111111">Sun-23:00</text>
+        <line class="axistickmajor" y2="178.00" x1="172.11" y1="173.00" x2="172.11"/>
+        <text y="185" class="axislabel" x="226.777777777778">Mon-05:00</text>
+        <line class="axistickmajor" y2="178.00" x1="226.78" y1="173.00" x2="226.78"/>
+        <text y="185" class="axislabel" x="281.444444444444">Mon-11:00</text>
+        <line class="axistickmajor" y2="178.00" x1="281.44" y1="173.00" x2="281.44"/>
+        <text y="185" class="axislabel" x="336.111111111111">Mon-17:00</text>
+        <line class="axistickmajor" y2="178.00" x1="336.11" y1="173.00" x2="336.11"/>
+        <text y="185" class="axislabel" x="390.777777777778">Mon-23:00</text>
+        <line class="axistickmajor" y2="178.00" x1="390.78" y1="173.00" x2="390.78"/>
+        <text y="185" class="axislabel" x="440">Tue-05:00</text>
+        <line class="axistickmajor" y2="178.00" x1="440.00" y1="173.00" x2="440.00"/>
+        <text y="195" class="axislabelt0" x="20">Sun Nov 09 08:30:00 +0530 2008</text>
+        <line class="axistickmajor" y2="185.00" x1="40.00" y1="175.00" x2="40.00"/>
+      </g>
+    </g>
+  </g>
+  <g pointer-events="none" opacity="0.8" visibility="hidden" id="ToolTip">
+    <rect y="5" fill="white" rx="2" ry="2" width="88" id="tipbox" x="0" height="20" stroke="black"/>
+    <text y="20" font-size="12" font-family="Arial" id="tipText" x="5">
+      <tspan font-weight="bold" id="tipTitle" x="5">
+        <![CDATA[]]>
+      </tspan>
+      <tspan dy="15" id="tipDesc" x="5" fill="blue">
+        <![CDATA[]]>
+      </tspan>
+    </text>
+  </g>
+</svg>

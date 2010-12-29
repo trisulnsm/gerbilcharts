@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" xmlns="http://www.w3.org/2000/svg" height="200" onload="Init(evt)">
+  <style type="text/css">	fill: none;
+	stroke-width: 1;
+	stroke: black;
+}
+.gridlineh
+{	
+	stroke-width: 1;
+	stroke: lightgray;
+}
+.gridlinev
+{
+	stroke-width: 1;
+	stroke: lightgray;	
+}
+.surfaceback
+{
+	fill: url(#vertgrad);
+}
+.axispanel
+{
+	fill: lightgray;
+
+}
+.axistickmajor
+{
+	stroke-width: 2;
+	stroke: black;
+}
+.axistickminor
+{
+	stroke-width: 1;
+	stroke: black;
+}
+.panel
+{
+	fill: white;
+}
+.legend
+{
+	fill: red;
+}
+#item0
+{
+	stroke:	none;
+	fill: #00FF00;
+}
+#item1
+{
+	stroke: none;
+	fill: red;
+}
+#item2
+{
+	stroke: none;
+	fill: gold;
+}
+#item3
+{
+	stroke: none;
+	fill: magenta;
+}
+#item4
+{
+	stroke:	none;
+	fill: olive;
+}
+#item5
+{
+	stroke: none;
+	fill: #F88017;
+}
+#item6
+{
+	stroke: none;
+	fill: #1F75FE;
+}
+#item7
+{
+	stroke: none;
+	fill: #B87333;
+}
+#item8
+{
+    stroke: none;
+    fill: #640E29;
+}
+#item9
+{
+    stroke: none;
+    fill: aqua;
+}
+#item10
+{
+    stroke: none;
+    fill: black;
+}
+#lineitem0
+{
+    stroke: none;
+    stroke-width: 2;
+}
+#lineitem1
+{
+    stroke: none;
+    stroke-width: 2;
+}
+#lineitem2
+{
+    stroke: none;
+    stroke-width: 2;
+}
+#lineitem3
+{
+    stroke: none;
+    stroke-width: 2;
+}
+#lineitem4
+{
+    stroke: none;
+    stroke-width: 2;
+}
+#lineitem5
+{
+    stroke: none;
+    stroke-width: 2;
+}
+#lineitem6
+{
+    stroke: none;
+    stroke-width: 2;
+}
+#lineitem7
+{
+    stroke: none;
+    stroke-width: 2;
+}
+#lineitem8
+{
+    stroke: none;
+    stroke-width: 2;
+}
+.axislabel
+{
+	font-family: Verdana,sans-serif,Helvetica,Arial;
+	font-size: 9px;
+	fill: black;
+	stroke: none;
+}
+
+.axislabelt0
+{
+	font-family: sans;
+	font-size: 10px;
+	fill: black;
+	stroke: none;
+}
+.titletext
+{
+	fill: gray;
+	stroke: none;
+	font-family: Arial, Helvetica, sans-serif;;
+	font-size: 24px;
+	font-weight: bold;
+}
+.titlepanel
+{
+	fill: white;
+	fill-opacity: 0.5;
+}
+.legendpanel
+{
+	fill: white;
+	fill-opacity: 0.5;
+}
+.legendtext
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	fill: black;
+	stroke: none;
+}
+.elementlabel
+{
+	font-family: sans;
+	font-size: 10px;
+	fill: black;
+	stroke: none;
+}
+.elementvalue
+{
+	font-family: sans;
+	font-size: 8px;
+	fill: black;
+	stroke: none;
+}
+.trackerpanel
+{
+    fill: yellow;
+    fill-opacity: 0.5;
+}
+.trackerrect
+{
+    fill: red;
+    fill-opacity: 0.2;
+}
+.trackertextinterval
+{
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.trackertextfromts
+{
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+</style>
+  <script type="text/javascript" xlink:href="/tmp/prototype.js"/>
+  <script type="text/javascript" xlink:href="/tmp/gerbil.js"/>
+  <defs>
+    <linearGradient y1="0%" x2="0%" y2="100%" id="vertgrad" x1="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255)"/>
+      <stop offset="100%" style="stop-color:rgb(224,224,224)"/>
+    </linearGradient>
+  </defs>
+  <g id="GerbilSVGGraph">
+    <g id="Gerbil_Root_Window" stroke="black" fill="none">
+      <g id="default" stroke="black" fill="none">
+        <rect x="0" class="surfaceback" width="350" height="200" y="0"/>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <text x="2" class="titletext" y="20">Sales figures</text>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <path gerbiltooltip1="Bruce" gerbiltooltip2="Val = 134" d="M175,100  L245.0,100 A70.0,70.0 0 0,1  233.245497150527,138.826048751939 " onmouseover="OpacityDown(evt)" onmouseout="OpacityUp(evt)" id="item0"/>
+        <text x="251.56795216218" class="elementlabel" y="123.180783025821">134</text>
+        <text x="251.56795216218" class="elementlabel" y="133.180783025821">Bruce</text>
+        <text x="220.940771297308" class="elementvalue" y="113.908469815493">9%</text>
+        <path gerbiltooltip1="Rex" gerbiltooltip2="Val = 309" d="M175,100  L233.245497150527,138.826048751939 A70.0,70.0 0 0,1  149.494215471289,165.187843618078 " onmouseover="OpacityDown(evt)" onmouseout="OpacityUp(evt)" id="item1"/>
+        <text x="199.019264452865" class="elementlabel" y="176.309075051027">309</text>
+        <text x="199.019264452865" class="elementlabel" y="186.309075051027">Rex</text>
+        <text x="189.411558671719" class="elementvalue" y="145.785445030617">21%</text>
+        <path gerbiltooltip1="Sharmila" gerbiltooltip2="Val = 245" d="M175,100  L149.494215471289,165.187843618078 A70.0,70.0 0 0,1  105.527608140094,108.578273093327 " onmouseover="OpacityDown(evt)" onmouseout="OpacityUp(evt)" id="item2"/>
+        <text x="81.8177305545392" class="elementlabel" y="149.07138501939">245</text>
+        <text x="81.8177305545392" class="elementlabel" y="159.07138501939">Sharmila</text>
+        <text x="137.090638332724" class="elementvalue" y="129.442831011634">16%</text>
+        <path gerbiltooltip1="Wasim" gerbiltooltip2="Val = 145" d="M175,100  L105.527608140094,108.578273093327 A70.0,70.0 0 0,1  114.023076259938,65.6224670577029 " onmouseover="OpacityDown(evt)" onmouseout="OpacityUp(evt)" id="item3"/>
+        <text x="66.5201048229911" class="elementlabel" y="84.4788514276263">145</text>
+        <text x="66.5201048229911" class="elementlabel" y="94.4788514276263">Wasim</text>
+        <text x="127.912062893795" class="elementvalue" y="90.6873108565758">10%</text>
+        <path gerbiltooltip1="Buzo" gerbiltooltip2="Val = 59" d="M175,100  L114.023076259938,65.6224670577029 A70.0,70.0 0 0,1  124.855292117236,51.1583346787577 " onmouseover="OpacityDown(evt)" onmouseout="OpacityUp(evt)" id="item4"/>
+        <text x="80.9662636366476" class="elementlabel" y="52.0450147810607">59</text>
+        <text x="80.9662636366476" class="elementlabel" y="62.0450147810607">Buzo</text>
+        <path gerbiltooltip1="Vipin" gerbiltooltip2="Val = 70" d="M175,100  L124.855292117236,51.1583346787577 A70.0,70.0 0 0,1  141.968374340912,38.2836188170607 " onmouseover="OpacityDown(evt)" onmouseout="OpacityUp(evt)" id="item5"/>
+        <text x="96.9046499087152" class="elementlabel" y="36.0716236746407">70</text>
+        <text x="96.9046499087152" class="elementlabel" y="46.0716236746407">Vipin</text>
+        <path gerbiltooltip1="label" gerbiltooltip2="Val = 240" d="M175,100  L141.968374340912,38.2836188170607 A70.0,70.0 0 0,1  212.279389748704,40.7526616634618 " onmouseover="OpacityDown(evt)" onmouseout="OpacityUp(evt)" id="item6"/>
+        <text x="187.807550887882" class="elementlabel" y="20.0492798155517">240</text>
+        <text x="187.807550887882" class="elementlabel" y="30.0492798155517">label</text>
+        <text x="176.684530532729" class="elementvalue" y="52.029567889331">16%</text>
+        <path gerbiltooltip1="9th item " gerbiltooltip2="Val = 45" d="M175,100  L212.279389748704,40.7526616634618 A70.0,70.0 0 0,1  223.177393425889,49.216747222267 " onmouseover="OpacityDown(evt)" onmouseout="OpacityUp(evt)" id="item7"/>
+        <text x="234.07138501939" class="elementlabel" y="36.8177305545392">45</text>
+        <text x="234.07138501939" class="elementlabel" y="46.8177305545392">9th item </text>
+        <path gerbiltooltip1="Others " gerbiltooltip2="Val = 15" d="M175,100  L223.177393425889,49.216747222267 A70.0,70.0 0 0,1  226.412998730714,52.4952259081716 " onmouseover="OpacityDown(evt)" onmouseout="OpacityUp(evt)" id="item8"/>
+        <path gerbiltooltip1="VIVEK" gerbiltooltip2="Val = 170" d="M175,100  L226.412998730714,52.4952259081716 A70.0,70.0 0 0,1  245.0,100.0 " onmouseover="OpacityDown(evt)" onmouseout="OpacityUp(evt)" id="item9"/>
+        <text x="259.500392706375" class="elementlabel" y="70.8505319671876">170</text>
+        <text x="259.500392706375" class="elementlabel" y="80.8505319671876">VIVEK</text>
+        <text x="219.700235623825" class="elementvalue" y="82.5103191803125">11%</text>
+      </g>
+    </g>
+  </g>
+  <g opacity="0.8" pointer-events="none" visibility="hidden" id="ToolTip">
+    <rect x="0" ry="2" width="88" rx="2" fill="white" height="20" y="5" stroke="black" id="tipbox"/>
+    <text x="5" font-size="12" font-family="Arial" y="20" id="tipText">
+      <tspan x="5" font-weight="bold" id="tipTitle">
+        <![CDATA[]]>
+      </tspan>
+      <tspan x="5" dy="15" fill="blue" id="tipDesc">
+        <![CDATA[]]>
+      </tspan>
+    </text>
+  </g>
+</svg>

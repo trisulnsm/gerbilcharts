@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg onload="Init(evt)" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" version="1.1" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">.surfacepanel
+{
+	fill: none;
+	stroke-width: 1;
+	stroke: black;
+}
+.gridlineh
+{	
+	stroke-width: 1;
+	stroke: lightgray;
+}
+.gridlinev
+{
+	stroke-width: 1;
+	stroke: lightgray;	
+}
+.surfaceback
+{
+	fill: url(#vertgrad);
+}
+.axispanel
+{
+	fill: lightgray;
+}
+.axistickmajor
+{
+	stroke-width: 2;
+	stroke: black;
+}
+.axistickminor
+{
+	stroke-width: 1;
+	stroke: black;
+}
+.panel
+{
+	fill: white;
+}
+.legend
+{
+	fill: red;
+}
+#item0
+{
+	stroke:	blue;
+	fill: blue;
+}
+#item1
+{
+	stroke: red;
+	fill: red;
+}
+#item2
+{
+	stroke: yellow;
+	fill: yellow ;
+}
+#item3
+{
+	stroke: aqua;
+	fill: magenta;
+}
+#item4
+{
+	stroke:	gray;
+	fill: blue;
+}
+#item5
+{
+	stroke: green;
+	fill: green;
+}
+#item6
+{
+	stroke: orange;
+	fill: orange;
+}
+#item7
+{
+	stroke: lime;
+	fill: violet;
+}
+#item8
+{
+    stroke: brown;
+    fill: navy;
+}
+#lineitem0
+{
+    stroke: blue;
+    stroke-width: 2;
+}
+#lineitem1
+{
+    stroke: red;
+    stroke-width: 2;
+}
+#lineitem2
+{
+    stroke: yellow;
+    stroke-width: 2;
+}
+#lineitem3
+{
+    stroke: aqua;
+    stroke-width: 2;
+}
+#lineitem4
+{
+    stroke: gray;
+    stroke-width: 2;
+}
+#lineitem5
+{
+    stroke: green;
+    stroke-width: 2;
+}
+#lineitem6
+{
+    stroke: orange;
+    stroke-width: 2;
+}
+#lineitem7
+{
+    stroke: lime;
+    stroke-width: 2;
+}
+#lineitem8
+{
+    stroke: brown;
+    stroke-width: 2;
+}
+.axislabel
+{
+	font-family: sans;
+	font-size: 10px;
+	fill: black;
+	stroke: none;
+}
+
+.axislabelt0
+{
+	font-family: sans;
+	font-size: 8px;
+	fill: black;
+	stroke: none;
+}
+.titletext
+{
+	fill: gray;
+	stroke: none;
+	font-family: Arial, Helvetica, sans-serif;;
+	font-size: 24px;
+	font-weight: bold;
+}
+.titlepanel
+{
+	fill: white;
+	fill-opacity: 0.5;
+}
+.legendpanel
+{
+	fill: white;
+	fill-opacity: 0.5;
+}
+.legendtext
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	fill: black;
+	stroke: none;
+}
+.elementlabel
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.trackerpanel
+{
+    fill: yellow;
+    fill-opacity: 0.5;
+}
+.trackerrect
+{
+    fill: red;
+    fill-opacity: 0.2;
+}
+.trackertextinterval
+{
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.trackertextfromts
+{
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+</style>
+  <script xlink:href="/javascripts/prototype.js" type="text/javascript"/>
+  <script xlink:href="/javascripts/gerbil.js" type="text/javascript"/>
+  <defs>
+  </defs>
+  <g id="GerbilSVGGraph">
+    <g id="Gerbil_Root_Window" stroke="black" fill="none">
+      <g id="default" stroke="black" fill="none">
+        <rect class="surfaceback" width="320" x="30" height="175" y="0"/>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <line y1="175.00" class="gridlineh" x2="350.00" y2="175.00" x1="30.00"/>
+        <line y1="140.00" class="gridlineh" x2="350.00" y2="140.00" x1="30.00"/>
+        <line y1="105.00" class="gridlineh" x2="350.00" y2="105.00" x1="30.00"/>
+        <line y1="70.00" class="gridlineh" x2="350.00" y2="70.00" x1="30.00"/>
+        <line y1="35.00" class="gridlineh" x2="350.00" y2="35.00" x1="30.00"/>
+        <line y1="0.00" class="gridlineh" x2="350.00" y2="0.00" x1="30.00"/>
+        <line y1="0.00" class="gridlinev" x2="30.00" y2="175.00" x1="30.00"/>
+        <line y1="0.00" class="gridlinev" x2="95.26" y2="175.00" x1="95.26"/>
+        <line y1="0.00" class="gridlinev" x2="156.32" y2="175.00" x1="156.32"/>
+        <line y1="0.00" class="gridlinev" x2="221.58" y2="175.00" x1="221.58"/>
+        <line y1="0.00" class="gridlinev" x2="284.74" y2="175.00" x1="284.74"/>
+        <line y1="0.00" class="gridlinev" x2="350.00" y2="175.00" x1="350.00"/>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <text class="titletext" x="32" y="20">Sales figures</text>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <circle cy="174.65" r="4" id="item0" cx="30.0"/>
+        <circle cy="171.5" r="4" id="item0" cx="95.2631578947368"/>
+        <circle cy="168.7" r="4" id="item0" cx="156.315789473684"/>
+        <circle cy="165.2" r="4" id="item0" cx="221.578947368421"/>
+        <circle cy="147.0" r="4" id="item0" cx="284.736842105263"/>
+        <circle cy="132.3" r="4" id="item0" cx="350.0"/>
+        <polyline points="30.0,174.65 95.2631578947368,171.5 156.315789473684,168.7 221.578947368421,165.2 284.736842105263,147.0 350.0,132.3 " id="lineitem0"/>
+        <circle cy="135.8" r="4" id="item1" cx="30.0"/>
+        <circle cy="167.3" r="4" id="item1" cx="95.2631578947368"/>
+        <circle cy="159.25" r="4" id="item1" cx="156.315789473684"/>
+        <circle cy="150.5" r="4" id="item1" cx="221.578947368421"/>
+        <circle cy="98.7" r="4" id="item1" cx="284.736842105263"/>
+        <circle cy="66.85" r="4" id="item1" cx="350.0"/>
+        <polyline points="30.0,135.8 95.2631578947368,167.3 156.315789473684,159.25 221.578947368421,150.5 284.736842105263,98.7 350.0,66.85 " id="lineitem1"/>
+        <circle cy="175.0" r="4" id="item2" cx="30.0"/>
+        <circle cy="166.95" r="4" id="item2" cx="95.2631578947368"/>
+        <circle cy="166.25" r="4" id="item2" cx="156.315789473684"/>
+        <circle cy="161.0" r="4" id="item2" cx="221.578947368421"/>
+        <circle cy="168.7" r="4" id="item2" cx="284.736842105263"/>
+        <circle cy="154.35" r="4" id="item2" cx="350.0"/>
+        <polyline points="30.0,175.0 95.2631578947368,166.95 156.315789473684,166.25 221.578947368421,161.0 284.736842105263,168.7 350.0,154.35 " id="lineitem2"/>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <rect class="legendpanel" width="100" x="246" height="45" y="10"/>
+        <rect width="10" x="248" height="10" y="12" id="item0"/>
+        <text class="legendtext" x="263" y="20">Bruce</text>
+        <rect width="10" x="248" height="10" y="27" id="item1"/>
+        <text class="legendtext" x="263" y="35">Rex</text>
+        <rect width="10" x="248" height="10" y="42" id="item2"/>
+        <text class="legendtext" x="263" y="50">Buzo</text>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <rect class="axispanel" width="30" x="0" height="175" y="0"/>
+        <text class="axislabel" x="26" text-anchor="end" y="175.0">0</text>
+        <line y1="175.00" class="axistickmajor" x2="32.00" y2="175.00" x1="27.00"/>
+        <text class="axislabel" x="26" text-anchor="end" y="140.0">100 </text>
+        <line y1="140.00" class="axistickmajor" x2="32.00" y2="140.00" x1="27.00"/>
+        <text class="axislabel" x="26" text-anchor="end" y="105.0">200 </text>
+        <line y1="105.00" class="axistickmajor" x2="32.00" y2="105.00" x1="27.00"/>
+        <text class="axislabel" x="26" text-anchor="end" y="70.0">300 </text>
+        <line y1="70.00" class="axistickmajor" x2="32.00" y2="70.00" x1="27.00"/>
+        <text class="axislabel" x="26" text-anchor="end" y="35.0">400 </text>
+        <line y1="35.00" class="axistickmajor" x2="32.00" y2="35.00" x1="27.00"/>
+        <text class="axislabel" x="26" text-anchor="end" y="10">500 </text>
+        <line y1="0.00" class="axistickmajor" x2="32.00" y2="0.00" x1="27.00"/>
+      </g>
+      <g id="default" stroke="black" fill="none">
+        <rect class="axispanel" width="320" x="30" height="25" y="175"/>
+        <text class="axislabel" x="30.0" y="185">Jan</text>
+        <line y1="173.00" class="axistickmajor" x2="30.00" y2="178.00" x1="30.00"/>
+        <text class="axislabel" x="95.2631578947368" y="185">Feb</text>
+        <line y1="173.00" class="axistickmajor" x2="95.26" y2="178.00" x1="95.26"/>
+        <text class="axislabel" x="156.315789473684" y="185">Mar</text>
+        <line y1="173.00" class="axistickmajor" x2="156.32" y2="178.00" x1="156.32"/>
+        <text class="axislabel" x="221.578947368421" y="185">Apr</text>
+        <line y1="173.00" class="axistickmajor" x2="221.58" y2="178.00" x1="221.58"/>
+        <text class="axislabel" x="284.736842105263" y="185">May</text>
+        <line y1="173.00" class="axistickmajor" x2="284.74" y2="178.00" x1="284.74"/>
+        <text class="axislabel" x="340" y="185">Jun</text>
+        <line y1="173.00" class="axistickmajor" x2="340.00" y2="178.00" x1="340.00"/>
+        <text class="axislabelt0" x="10" y="195">Jan</text>
+        <line y1="175.00" class="axistickmajor" x2="30.00" y2="185.00" x1="30.00"/>
+      </g>
+    </g>
+  </g>
+  <g pointer-events="none" opacity="0.8" id="ToolTip" visibility="hidden">
+    <rect stroke="black" fill="white" x="0" width="88" height="20" id="tipbox" y="5" rx="2" ry="2"/>
+    <text font-size="12" x="5" font-family="Arial" id="tipText" y="20">
+      <tspan font-weight="bold" x="5" id="tipTitle">
+        <![CDATA[]]>
+      </tspan>
+      <tspan x="5" id="tipDesc" dy="15" fill="blue">
+        <![CDATA[]]>
+      </tspan>
+    </text>
+  </g>
+</svg>

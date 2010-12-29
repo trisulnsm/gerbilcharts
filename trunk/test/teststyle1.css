@@ -1,0 +1,13 @@
+.surface
+{
+	fill: blue;
+	stroke-width: 2;
+	stroke: black;
+}
+
+.axislabel
+{
+	font-family: Helvetica;
+	font-size: 10px;
+}
+

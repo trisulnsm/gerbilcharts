@@ -1,0 +1,97 @@
+== 0.3.7 2010-04-15
+* Changes
+  * Lots of bug fixes rolled up
+  * Better scaling in 1G to 10G range
+  * Time zone support for gerbil.js
+
+== 0.3.2 2010-01-05
+* Changes
+  * New parameter :enable_detailed_legend :enable_legend
+  * Larger default fonts
+  * Better layout logic for detailed legend panel 
+  * Block button to open/close legend panel
+
+
+== 0.2.17 2009-12-16
+* Changes
+  * Traffic Matrix and Conversation Error Rectified
+  * Angled labels for matrix
+
+== 0.2.15 2009-12-11
+* Changes
+  * More hardening of gerbilcharts against bad data 
+
+== 0.2.14 2009-12-10
+* Changes
+  * Traffic matrix and conversation ring 
+
+== 0.2.13 2009-12-01
+* Changes
+  * inline javascript option now fixed
+  * grid sublines work for first label interval now
+  * detailed legend showing max/min/avg/latest
+  * option to switch between mini and detailed legends
+  * various other fixes and tweaks 
+  * if no activity detected in model/group then gracefully say so
+
+== 0.2.6 2009-10-27
+* Changes
+  * Negative values work good
+  * Much better timerange selection
+  * Auto tooltips for surfaces that allow it
+  * Butterfly surface Area surface (such as in/out charts)
+  * Other misc changes 
+
+== 0.2.3 2009-10-19
+* Changes
+  * New Squarized Line Surface
+  * Sophisticated grid works well with time axis
+  * Legend panel autosizing
+  * Bar chart labels now stagger automatically depending on chart size
+  * Fixed line chart problem due to a bad CSS 
+
+== 0.2.2 2009-09-21
+* Changes
+  * SVG filters specular lighting effect 
+  * You can now specify filter => :LikeButton to all charts to buttonize
+  *	Just a demo of the power of SVG filters applied to charting 
+
+== 0.2.1 2009-09-10
+* Changes
+  * Toolip and alpha effect javascript for PIE charts
+  * Accomodate wide labels on bar charts using tooltips
+  * Optimize pie chart layout further
+  * Fixes to stylesheet
+
+== 0.1.9 2009-09-10
+* Changes
+  * PIE Charts
+  * Fixed color scheme stylesheet brushmetal.css to be more pleasing
+  * Internal helper class svg_arc added 
+
+== 0.0.7 2009-08-15
+* Changes
+  * Bug fixes with stacked area
+
+== 0.0.5 2009-06-05
+* Changes
+  * Support render_to_string to inline render in browser
+  * New test case for testing string rendering
+  * New sample demonstrates integration with a Ruby on Rails app
+
+== 0.0.4 2008-11-10
+* Changes
+  * Demonstrate tooltips
+  * Gradient style for line chart (need to make this an option)
+
+== 0.0.3 2008-11-8
+
+* Initial package as a gem 
+  * Thanks to newgem / hoe we now have GerbilCharts as a gem
+  * Cleaned and refactored svg,models,surfaces,charts
+  * Tests written for charts
+
+== 0.0.1 2008-10-14
+
+* 1 major enhancement:
+  * Initial release
